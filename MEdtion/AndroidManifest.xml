@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.MEdition"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <application android:label="@string/app_name">
+        <uses-library android:name="com.android.future.usb.accessory" />
+        <activity android:name=".MyActivity"
+                  android:label="@string/app_name"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.PhillipScottGivens.AccessoryService.HardwareCommunicationService" />
+        <service android:name=".MyService"/>
+        <activity android:name="com.PhillipScottGivens.Camcorder.CamcorderSplashActivity"
+                  android:label="@string/app_name"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MySplashActivity"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.PhillipScottGivens.MEdition.SPLASH"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                       android:resource="@xml/accessory_filter" />
+        </activity>
+
+        <service android:name="com.PhillipScottGivens.Camcorder.CamcorderService" />
+    </application>
+</manifest> 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <ToggleButton android:id="@+id/led_toggle_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="LED On"
+            android:textOff="LED Off" />
+    <ToggleButton android:id="@+id/serviceRunningButton"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:textOn="Hardware Service On"
+                   android:textOff="Hardware Service Off" />
+    <ToggleButton android:id="@+id/camcorderOnButton"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textOn="Camcorder On"
+                  android:textOff="Camcorder Off" />
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+        </ScrollView>
+</LinearLayout>
+
+

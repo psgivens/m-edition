@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res/com.PhillipScottGivens"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <com.PhillipScottGivens.Led.LedMatrix
+            android:id="@+id/ledMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            local:dimension="8"
+            local:ledSpacing="2"
+            local:enableTouch="false"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+        <TextView android:id="@+id/xCoordinate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Clear"
+                />
+        <TextView android:id="@+id/yCoordinate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Color"
+                />
+        <TextView android:id="@+id/zCoordinate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="History"
+                />
+        </LinearLayout>
+</RelativeLayout>
+

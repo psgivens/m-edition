@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res/com.PhillipScottGivens"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <com.PhillipScottGivens.Led.LedMatrix
+            android:id="@+id/ledMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            local:dimension="8"
+            local:ledSpacing="2"/>
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+        <Button android:id="@+id/clearAllButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Clear"
+                />
+        <Button android:id="@+id/chooseColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Color"
+                android:layout_toRightOf="@+id/clearAllButton"
+                />
+        <Button android:id="@+id/changeBackgroundColorButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/chooseColorButton"
+                android:text="History"
+                />
+    </RelativeLayout>
+
+</RelativeLayout  >
+

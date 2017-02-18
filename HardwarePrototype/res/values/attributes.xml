@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="LedMatrix">
+        <attr name="dimension" format="integer" />
+        <attr name="ledSpacing" format="integer" />
+        <attr name="enableTouch" format="boolean" />
+    </declare-styleable>
+</resources>

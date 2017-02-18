@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HardwarePrototype</string>
+    <string name="hello">Hello World, ColorSelectDialog!</string>
+    <string name="color_picker_viewer">Color Viewer(Click to select 16Color)</string>
+    <string name="color_picker_red">RED</string>
+    <string name="color_picker_green">GREEN</string>
+    <string name="color_picker_blue">BLUE</string>
+    <string name="camera_alert">Device has only one camera!</string>
+    <string name="switch_cam">Switch Camera</string>
+</resources>
